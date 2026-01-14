@@ -22,19 +22,19 @@ async function weathercheck(city){
     document.querySelector(".wind").innerHTML = data.wind.speed + " KM/h";
 
     if(data.weather[0].main == "Mist"){
-        weathericon.src = "/Java_Script-Project-list/weather_app/weather-app-img/images/mist.png"
+        weathericon.src = "/weather_app/weather-app-img/images/mist.png"
     }
     else if(data.weather[0].main == "Rain"){
-        weathericon.src = "/Java_Script-Project-list/weather_app/weather-app-img/images/rain.png"
+        weathericon.src = "/weather_app/weather-app-img/images/rain.png"
     }
     else if(data.weather[0].main == "Snow"){
-         weathericon.src = "/Java_Script-Project-list/weather_app/weather-app-img/images/snow.png"
+         weathericon.src = "/weather_app/weather-app-img/images/snow.png"
     }
      else if(data.weather[0].main == "Clouds"){
-         weathericon.src = "/Java_Script-Project-list/weather_app/weather-app-img/images/clouds.png"
+         weathericon.src = "/weather_app/weather-app-img/images/clouds.png"
     }
      else if(data.weather[0].main == "Drizzle"){
-         weathericon.src = "/Java_Script-Project-list/weather_app/weather-app-img/images/drizzle.png"
+         weathericon.src = "/weather_app/weather-app-img/images/drizzle.png"
     }
 
     document.querySelector(".weather-box").style.display = "block"
